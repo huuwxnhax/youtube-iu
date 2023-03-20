@@ -1,0 +1,21 @@
+.menu-list {
+    min-width: 160px;
+}
+
+.menu-body {
+    padding-bottom: 12px;
+    overflow-y: auto;
+}
+.menu-item {
+    width: 100%;
+    justify-content: flex-start;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.6rem;
+    overflow: hidden;
+    white-space: nowrap;
+    z-index: 9999;
+    &:hover {
+        background-color: var(--hover-dark);
+    }
+}

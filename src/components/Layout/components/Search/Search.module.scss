@@ -1,0 +1,105 @@
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search {
+    width: 636px;
+    height: 40px;
+    padding-left: 16px;
+    background-color: rgba(22, 24, 35, 0.06);
+    border-radius: 20px;
+    display: flex;
+    position: relative;
+    border: 1.5px solid transparent;
+
+    input {
+        flex: 1;
+        height: 100%;
+        color: var(--text-black);
+        font-size: 1.6rem;
+        background-color: transparent;
+        padding-right: 40px;
+        border: none;
+    }
+
+    input:not(:placeholder-shown) ~ .seacrh-btn {
+        color: rgba(22, 24, 35, 0.75);
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        background-color: rgba(22, 24, 35, 0.12);
+        height: calc(var(--search-height) - var(--search-top-spacer) * 2);
+        width: 1px;
+        top: var(--search-top-spacer);
+        right: var(--search-button-width);
+    }
+
+    &:focus-within {
+        border-color: rgba(22, 24, 35, 0.2);
+    }
+}
+
+.keyboard {
+    padding-right: 10px;
+}
+
+.seacrh-btn {
+    width: var(--search-button-width);
+    height: 100%;
+    border-top-right-radius: var(--search-borber-radius);
+    border-bottom-right-radius: var(--search-borber-radius);
+    font-size: 1.8rem;
+    color: rgba(22, 24, 35, 0.34);
+
+    &:hover {
+        cursor: pointer;
+        background-color: var(--hover-dark);
+    }
+
+    &:active {
+        background-color: rgba(22, 24, 35, 0.06);
+    }
+}
+
+.search-result {
+    width: 572px;
+}
+
+.search-item {
+    height: 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 24px 0px 16px;
+
+    &:hover {
+        background-color: var(--hover-dark);
+    }
+}
+
+.search-title {
+    padding-left: 12px;
+}
+
+.delete-btn {
+    font-size: 13px;
+    color: #36c;
+    background-color: transparent;
+    line-height: 100%;
+}
+
+.clear-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 1.8rem;
+    font-weight: 300;
+
+    &:hover {
+        background-color: var(--hover-dark);
+    }
+}

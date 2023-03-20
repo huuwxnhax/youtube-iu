@@ -1,0 +1,50 @@
+.menu-item {
+    display: flex;
+    align-items: center;
+    font-size: 1.6rem;
+    color: var(--text-black);
+    font-weight: 400;
+    height: 40px;
+    padding: 0 12px;
+    text-decoration: none;
+    border-radius: 10px;
+
+    &:hover {
+        background-color: var(--hover-dark);
+    }
+}
+
+.icon {
+    margin-right: 24px;
+}
+
+.title {
+    font-size: 1.4rem;
+    width: 132px;
+    height: 20px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.thump {
+    width: 24px;
+    height: 24px;
+    margin: 0 24px 0 -24px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.avatar {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.notify {
+    width: 4px;
+    height: 4px;
+    background-color: #065fd4;
+    margin: 0 6px;
+    border-radius: 50%;
+}
